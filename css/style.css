@@ -1,0 +1,648 @@
+/*  Reseteamos los estilos propios de cada navegador */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* Reset para navegadores anteriores */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Empieza nuestro CSS */
+/* Mobile First */
+
+:root {
+  --gris: #413f3f;
+  --magenta: #d50b52;
+  --turquesa: #569ea2;
+  --ocre: #dcd8c7;
+  --texto: 'Work Sans', sans-serif;
+  --titulo: 'Bebas Neue', cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: var(--ocre);
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: var(--texto);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Cabecera - Título */
+.cabecera {
+  font-family: var(--titulo);
+}
+
+.titulo_cabecera {
+  color: var(--magenta);
+  font-size: 60px;
+  margin-top: 7px;
+  letter-spacing: 2px;
+}
+
+.y_cabecera {
+  color: var(--magenta);
+  font-size: 36px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.lineaSuperior_cabecera {
+  margin-top: 0px;
+  width: 560px;
+  height: 12px;
+  border-width: 0;
+  color: var(--magenta);
+  background-color: var(--magenta);
+}
+
+.lineaInferior_cabecera {
+  margin-top: 4px;
+  width: 560px;
+  height: 2px;
+  border-width: 0;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+/* Cita Alan Moore */
+.cita_cabecera {
+  margin-top: 32px;
+  color: var(--magenta);
+  line-height: 19px;
+  font-size: 15px;
+}
+
+.autor_cita {
+  color: var(--magenta);
+  font-weight: bold;
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 65px;
+}
+
+.comilla_cita_comienzo {
+  margin-left: -35px;
+  margin-right: 6px;
+  width: 30px;
+  height: auto;
+}
+
+.comilla_cita_final {
+  width: 30px;
+  height: auto;
+  margin-left: 6px;
+  margin-top: -20px;
+}
+
+/* Navegador Lateral ES EN*/
+.navegador_idiomas {
+  margin-top: 2%;
+}
+
+.noSeleccionado a {
+  text-decoration: none;
+  display: flex;
+  color: var(--turquesa);
+  font-family: var(--titulo);
+  border: 3px solid var(--turquesa);
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  width: 42px;
+}
+
+.noSeleccionado a:hover {
+  color: var(--ocre);
+  background-color: var(--turquesa);
+  opacity: 1;
+}
+
+.seleccionado a {
+  text-decoration: none;
+  display: flex;
+  color: var(--ocre);
+  font-family: var(--titulo);
+  border: 3px solid var(--turquesa);
+  background-color: var(--turquesa);
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  width: 42px;
+}
+
+.seleccionado a:hover {
+  opacity:1;
+}
+
+/* Cuerpo de la web */
+.caracteristicas {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 200px;
+  margin-right: 70px;
+  margin-top:-100px;
+  max-height:250px;
+}
+
+.caracteristicas_titulo {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 500px;
+  font-family: var(--titulo);
+  color: var(--magenta);
+  font-size: 30px;
+  letter-spacing: 0.05rem;
+  line-height: 32px;
+  margin-right: 20px;
+}
+
+/* Botón Leer Más */
+.caracteristicas_titulo a {
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: var(--titulo);
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 16px;
+  font-size: 12px;
+  width: 150px;
+  line-height: 0;
+}
+
+.caracteristicas_titulo_min {
+    color: var(--magenta);
+    font-size: 24px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.caracteristicas_texto {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+  font-size: 10px;
+  line-height: 15px;
+  color: var(--gris);
+  padding: 1em;
+  padding-top: 2rem;
+  margin: 0.5em;
+  justify-content: flex-end;
+}
+
+.caracteristicas_texto_imagen {
+  display: flex;
+  justify-content: center; /* alineacion en el eje X */
+  margin-top: 10px;
+}
+
+.caracteristicas_texto_imagen img {
+  width: 100px;
+}
+
+/* Amenazas */
+.amenazas_titulo {
+  margin-left: 200px;
+  margin-right: 70px;
+  font-family: var(--titulo);
+  color: var(--magenta);
+  font-size: 30px;
+  letter-spacing: 0.05rem;
+  line-height: 32px;
+}
+
+.amenazas_titulo_turquesa {
+  color: var(--turquesa);
+}
+
+.amenazas_titulo_min {
+  font-size: 24px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.amenazas_titulo_med {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+.amenazas_titulo_max {
+  font-size: 52px;
+  line-height: 50px;
+}
+
+.amenazas {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 70px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  min-height: 350px;
+}
+
+.amenazas_texto {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--gris);
+  padding: 3.5em;
+  padding-top: 2rem;
+  margin: 0.5em 1.8em 0.5em 0em;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.contenedor_central {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.amenazas_texto_titulo {
+  display: flex;
+  justify-content: center;
+  color: var(--magenta);
+  font-family: var(--titulo);
+  font-size: 35px;
+  letter-spacing: 0.05rem;
+  margin-top: 10px;
+  z-index: 5;
+  position: relative;
+}
+
+/* Animación que hace aparecer el titulo en diferentes lugares */
+@keyframes opacidad {
+  0%, 100% {opacity: 0;}
+    50% {opacity: 1;}
+}
+
+.amenazas_texto_titulo_oculto_arriba {
+  color: var(--turquesa);
+  font-family: var(--titulo);
+  font-size: 35px;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  margin-left: -2px;
+  margin-top: 8px;
+  position: absolute;
+  z-index: 3;
+  animation: opacidad 10s infinite;
+}
+
+.contenedor_corta_arriba {
+  position: absolute;
+  height: 16px;
+  width: 180px;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.amenazas_texto_titulo_oculto_abajo {
+  color: var(--turquesa);
+  font-family: var(--titulo);
+  font-size: 35px;
+  letter-spacing: 0.05rem;
+  margin-left: 2px;
+  margin-top: 12px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-self: flex-end;
+  animation: opacidad 15s infinite;
+}
+
+.contenedor_corta_abajo {
+  position: absolute;
+  display: flex;
+  height: 16px;
+  width: 190px;
+  z-index: 3;
+  margin-top: 16px;
+  overflow: hidden;
+  padding: 1px 0px 4px 0px;
+}
+
+.amenazas_texto_contenido {
+  min-height: 150px;
+  margin-top: 60px;
+}
+
+.amenazas_texto_boton {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  letter-spacing: 0.03rem;
+}
+
+.amenazas_texto_boton a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--turquesa);
+  font-family: var(--titulo);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 16px;
+  font-size: 12px;
+  text-align: center;
+  width: 150px;
+  line-height: 0;
+}
+
+.amenazas_texto_boton a:hover {
+  background-color: var(--magenta);
+  opacity: 1;
+}
+
+/* Decoración lineas en el lateral*/
+.lineasLateral {
+  position: absolute;
+  bottom: -87px;
+  left: -210px;
+}
+
+.lineasLateral img {
+  width: 370px;
+}
+
+/* Estilos Footer */
+.fa-behance-square,
+.fa-linkedin,
+.fa-instagram {
+  color: var(--turquesa);
+  margin-right: 25px;
+  font-size: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: var(--gris);
+  padding: 2em 80px 2em 80px;
+  width: 100%;
+  font-size: 80%;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.inner-footer {
+  color: #ffffff;
+}
+
+.inner-footer img {
+  margin-left: 7px;
+  margin-right: 25px;
+}
+
+.inner-footer img:hover,
+a:hover {
+  opacity: 0.4;
+}
+
+.bibliografia {
+  color: #ffffff;
+  text-align: right;
+  font-size: 80%;
+}
+
+/* Desktop Responsive: cuando la pantalla tenga 600px o más */
+@media screen and (max-width: 600px) {
+  /* Cabecera - Título */
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .titulo_cabecera {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+  }
+
+  .lineaSuperior_cabecera, .lineaInferior_cabecera {
+    width: 480px;
+  }
+
+  /* Cita Alan Moore */
+  .cita_cabecera {
+    margin-left: 30px;
+  }
+
+  .comilla_cita_comienzo {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Navegador Lateral ES EN*/
+  .navegador_idiomas {
+    margin-top: 12%;
+  }
+
+  /* Características */
+  .caracteristicas {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: 470px;
+  }
+
+  .caracteristicas_titulo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Amenazas */
+  .amenazas_titulo {
+    margin-top: 700px;
+  }
+
+  .amenazas {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  /* Decoración lineas en el lateral*/
+  .lineasLateral {
+    bottom: -1470px;
+  }
+
+  /* Estilos Footer */
+  .fa-behance-square,
+  .fa-linkedin,
+  .fa-instagram {
+    margin-right: 15px;
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 60px 2em 60px;
+    font-size: 70%;
+  }
+
+  .inner-footer img {
+    margin-right: 15px;
+  }
+
+  .bibliografia {
+    padding-top: 20px;
+    font-size: 70%;
+  }
+
+}
