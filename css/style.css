@@ -648,3 +648,11 @@ a:hover {
   }
 
 }
+
+/* Firma del pie de página */
+.inner-footer a.firma-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 25px 0 4px;
+}
