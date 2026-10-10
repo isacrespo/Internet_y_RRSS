@@ -514,6 +514,7 @@ p {
 /* Estilos Footer */
 .fa-behance-square,
 .fa-linkedin,
+.fa-globe,
 .fa-instagram {
   color: var(--turquesa);
   margin-right: 25px;
@@ -622,6 +623,7 @@ a:hover {
   /* Estilos Footer */
   .fa-behance-square,
   .fa-linkedin,
+.fa-globe,
   .fa-instagram {
     margin-right: 15px;
     font-size: 1.8rem;
